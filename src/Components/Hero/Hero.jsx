@@ -74,7 +74,7 @@ const Hero = () => {
     setActiveData(data);
   };
   return (
-  <section id="home">
+  <section id="home" className='md:ml-30'>
    <motion.div
     initial={{ backgroundColor: activeData.bgColor }}
     animate={{ backgroundColor: activeData.bgColor }}

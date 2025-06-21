@@ -7,7 +7,7 @@ import { fadeUp } from '../../Components/Products/Products';
 const Banner = () => {
   return (
     <section id='about'>
-        <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 gap-12">
+        <div className="container grid grid-cols-1 md:grid-cols-2 space-y-6 md:space-y-0 gap-12 md:ml-30">
             <div className="relative">
                 <motion.img initial={{ opacity:0, x:-100 }} whileInView={{ opacity:1, x:0 }} transition={{ duration:0.8, delay:0.2, ease: "easeInOut" }}
                 src={BannerImg} alt='' className='w-[300px] md:w-[400px] mx-auto relative z-10' />

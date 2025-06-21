@@ -13,7 +13,7 @@ import { motion } from 'Framer-motion';
 
 const Footer = () => {
   return (
-    <footer id="contact" className='bg-red-950 pt-12 pb-8 text-white'>
+    <footer id="contact" className='bg-red-950 md:ml-30 pt-12 pb-8 text-white'>
         <div className="container">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
                 <motion.div initial={{ opacity:0, y:100 }} whileInView={{ opacity:1, y:0 }} transition={{ delay:0.2, duration:0.6, }}
