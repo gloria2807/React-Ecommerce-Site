@@ -74,7 +74,7 @@ const Hero = () => {
     setActiveData(data);
   };
   return (
-  <section id="home" className='md:ml-30'>
+  <section id="home">
    <motion.div
     initial={{ backgroundColor: activeData.bgColor }}
     animate={{ backgroundColor: activeData.bgColor }}
@@ -82,7 +82,7 @@ const Hero = () => {
     >
     <Navbar />
 
-    <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[605px]">
+    <div className="container md:mr-30 grid grid-cols-1 md:grid-cols-2 min-h-[605px]">
       <div className="flex flex-col text-white justify-center py-14 md:py-0 xl:max-w-[500px] order-2 md:order-1 relative z-40">
         <div className="space-y-5 text-center md:text-left">
           <AnimatePresence mode='wait'>
