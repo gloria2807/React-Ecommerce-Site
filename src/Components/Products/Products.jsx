@@ -48,8 +48,8 @@ const ProductsData = [
 const Products = () => {
   return (
     <section id='products'>
-    <div className='bg-gray-100 py-8 md:ml-30'>
-        <div className="container py-14">
+    <div className='bg-gray-100 py-8'>
+        <div className="container py-14 md:ml-30">
             <motion.h1 variants={fadeUp(0.2)} initial="hidden" whileInView={"show"}
             className='text-3xl font-bold text-center pb-10'>
                 Our Products

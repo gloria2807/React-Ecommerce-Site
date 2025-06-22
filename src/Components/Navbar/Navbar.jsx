@@ -37,9 +37,9 @@ const NavbarMenu = [
 const Navbar = () => {
 
   return(
-  <div className='text-white py-8'>
+  <div className='text-white py-6'>
     <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ duration:1, delay:0.5 }}
-    className="container flex justify-between items-center">
+    className="container flex justify-between items-center md:ml-30">
       <div>
         <img src={Logo} alt='' className='max-w-[100px] invert'/>
       </div>
@@ -54,7 +54,7 @@ const Navbar = () => {
                 scale: 5,
                 mixBlendMode: "difference",
               }}>
-              <Link to={item.path} className='inline-block text-bsase font-semibold py-2 px-3 uppercase'>{item.title}</Link>
+              <Link to={item.path} className='inline-block text-base font-semibold py-2 px-3 uppercase'>{item.title}</Link>
               </UpdateFollower>
             </li>
           ))}

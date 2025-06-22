@@ -38,8 +38,8 @@ const BlogsData = [
 
 const Blogs = () => {
   return (
-    <section id='blog' className='bg-gray-50 md:ml-30'>
-      <div className="container py-14">
+    <section id='blog' className='bg-gray-50'>
+      <div className="container py-14 md:ml-30">
         <h1 className='text-3xl font-bold text-center pb-8'>Blogs</h1>
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6'>
           {
