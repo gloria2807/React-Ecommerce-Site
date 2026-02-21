@@ -82,8 +82,8 @@ const Hero = () => {
     >
     <Navbar />
 
-    <div className="container md:ml-30 grid grid-cols-1 md:grid-cols-2 min-h-[605px]">
-      <div className="flex flex-col text-white justify-center py-14 md:py-0 xl:max-w-[500px] order-2 md:order-1 relative z-40">
+    <div className="px-10 grid grid-cols-1 md:grid-cols-2 min-h-[605px]">
+      <div className="flex flex-col text-white justify-center py-14 xl:max-w-[500px] order-2 md:order-1 relative z-40">
         <div className="space-y-5 text-center md:text-left">
           <AnimatePresence mode='wait'>
             <UpdateFollower mouseOptions={{
@@ -166,7 +166,7 @@ const Hero = () => {
        <div className="flex flex-col justify-end items-center relative order-1 md:order-2">
         <AnimatePresence mode='wait'>
             <motion.img key={activeData.id} initial={{ opacity:0, x:100 }} animate={{ opacity:1, x:0 }} transition={{ duration:0.4, delay:0, ease:easeInOut }} exit={{ opacity:0, x:-100, transition:{ duration:0.4, } }}
-            src={activeData.image} alt='' className='w-[150px] md:w-[300px] xl:w-[350px] img-shadow relative z-10 pb-50' />
+            src={activeData.image} alt='' className='w-[150px] md:w-[300px] xl:w-[350px] img-shadow relative z-10' />
         </AnimatePresence>
         <AnimatePresence mode='wait'>
         <motion.div key={activeData.id} initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ duration:0.4, delay:0.0, ease:"easeInOut" }} exit={{ opacity:0, transition:{ duration:0.4, } }}

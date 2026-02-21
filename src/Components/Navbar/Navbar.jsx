@@ -39,7 +39,7 @@ const Navbar = () => {
   return(
   <div className='text-white py-6'>
     <motion.div initial={{ opacity:0 }} animate={{ opacity:1 }} transition={{ duration:1, delay:0.5 }}
-    className="container flex justify-between items-center md:ml-30">
+    className="flex justify-between items-center px-10">
       <div>
         <img src={Logo} alt='' className='max-w-[100px] invert'/>
       </div>
